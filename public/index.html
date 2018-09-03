@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mongo Scraper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+  <nav class="grey darken-3">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Claire Stolp</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <img src="/images/Bird's eye.png" class="z-depth-2" alt="banner">
+  </div>
+  
+  <div class="container m-md-top m-md-bottom">
+    <div class="flex flex-center">
+        <button id="get-times" class="btn-large waves-effect waves-light hoverable m-xsm z-depth-2 blue darken-1">New York Times</button>
+        <button id="get-wsj" class="hoverable btn-large m-xsm z-depth-2 deep-purple lighten-1">The Wall Street Journal</button>
+        <button id="get-fox" class="hoverable btn-large m-xsm z-depth-2 red darken-1">Fox News</button>
+    </div>
+  </div>
+
+  <div id="results" class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Click on one of the buttons above to see some headlines!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
