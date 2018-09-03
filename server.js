@@ -22,7 +22,15 @@ require('./routes/htmlRoutes')(app);
 //else use the local mongoHeadlines database
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper";
 
+const db = mongoose.connection;
 
+db.on('error', function(err) {
+  console.log('Mongoose Error: ', err);
+});
+
+db.once('open', function(err) {
+  console.log('Mongoose connection successful.');
+});
 //set mongoose to use built in JavaScript ES6 Promises
 //connect to MongoDB
 mongoose.Promise = Promise;
