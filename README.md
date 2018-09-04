@@ -25,4 +25,4 @@ This small web app was created to fulfill the requirements of the UNC Chapel Hil
 * Allow users to save articles
 * Don't allow duplicate articles to be saved in the database
 * Scrape everytime the user requests articles
-* Rewrite the app into a react application and use Materialize's JavaScript library
+* Rewrite the app into a React app and use Materialize's JavaScript library
